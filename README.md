@@ -1,5 +1,6 @@
 # USD.PW
 
-This is the code that will be backing the website USD.pw
+This is the code that is used for usd.pw. 
 
-Co-Written by @JPeroutek
+
+Co-Written by @JPeroutek, @Pringers, and @eduardog3000.
