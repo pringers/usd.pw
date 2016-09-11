@@ -1,0 +1,17 @@
+The plan is to support high volume coins, and possibly some others. 
+To accurately pin a price on the price of bitcoin, we'll use multiple sources for the USD/BTC price.
+From each source, the price will be determined with (bid + ask) / 2, as that way, it's a rough, but accurate estimate of the price as it meets between the price people are willing to pay for, as well as the price that people are selling at.
+This rule and way of calculation should only be done with BTC/USD or other high volume, low spread coins as it's extremely innacurate for low priced currencies.
+
+To ensure the BTC/USD price is accurate, we must use a large amount of exchange to grab information from. 
+
+Link to Exchnages for BTC/USD
+(High volume exchanges)
+
+https://poloniex.com/support/api/
+https://docs.gemini.com/rest-api/
+https://www.okcoin.com/about/rest_getStarted.do
+https://docs.bitfinex.com/
+https://btc-e.com/api/3/docs
+https://www.kraken.com/help/api
+https://www.bitstamp.net/api/
