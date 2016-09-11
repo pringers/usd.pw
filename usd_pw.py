@@ -4,7 +4,7 @@ from flask import Flask,request,session,g,redirect,url_for,abort,render_template
 
 app=Flask(__name__)
 app.config.from_object(__name__)
-app.config.update(dict(DATABASE=os.path.join(app.root_path,'usd_pw.db'),SECRET_KEY='JOHNISGAY',USERNAME='admin',PASSWORD='default'))
+app.config.update(dict(DATABASE=os.path.join(app.root_path,'usd_pw.db'),SECRET_KEY='JACOBISGAY',USERNAME='admin',PASSWORD='default'))
 app.config.from_envvar('USD_PW_SETTINGS', silent=True)
 
 def connect_db():
