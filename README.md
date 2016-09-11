@@ -2,4 +2,4 @@
 
 This is the code that will be backing the website USD.pw
 
-Co-Written by JPeroutek
+Co-Written by @JPeroutek
