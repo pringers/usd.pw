@@ -8,7 +8,6 @@ To ensure the BTC/USD price is accurate, we must use a large amount of exchange 
 Link to Exchnages for BTC/USD
 (High volume exchanges)
 
-https://poloniex.com/support/api/
 https://docs.gemini.com/rest-api/
 https://www.okcoin.com/about/rest_getStarted.do
 https://docs.bitfinex.com/
@@ -16,10 +15,48 @@ https://btc-e.com/api/3/docs
 https://www.kraken.com/help/api
 https://www.bitstamp.net/api/
 
+We'll use the same API from these websites for large coins such as Ethereum, Litecoin, Monero, Ripple, and more if they support it. 
+If they don't, we'll only use a handful of those exchanges to calculate the price.
+
+If there are coins without a $COIN/USD trade, then the price of the coin will have to be determined by this calculation.
+
+exchangeCOINBTC_mid = (exchangeCOINBTC_ask + exchangeCOINBTC_bid) / 2
+exchangeCOINUSD = exchangeCOINBTC_mid = * usdpw_BTCUSD 
+
+* usdpw_BTCUSD will be the main/average pricepoint calculated from all the exchanges. (See below)
+
+
+An example of this being used, XMR/USD
+
+	1 XMR_ask = 0.018 BTC
+	1 XMR_ask = 0.0179 BTC
+	1 BTC = $600 USD
+	
+	poloniexXMRBTC_mid = (0.018 + 0.0179) / 2
+	=> 0.01795
+	
+	poloniexXMRUSD = 0.01795 * 600
+	=> 10.77
+
+The price of 1 XMR is 0.01795 BTC or $10.77 USD.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 To calculate individual exchange price and the final price, 
 
 btcusd = {
-	    "poloniexBTCUSD_mid": (poloniexBTCUSD_ask + poloniexBTCUSD_bid) / 2,
 	    "geminiBTCUSD_mid": (geminiBTCUSD_ask + geminiBTCUSD_bid) / 2,
 	    "okcoinBTCUSD_mid": (okcoinBTCUSD_ask + okcoinBTCUSD_bid) / 2,
 	    "bitfinexBTCUSD_mid": (bitfinexBTCUSD_ask + bitfinexBTCUSD_bid) / 2,
