@@ -18,8 +18,7 @@ https://www.bitstamp.net/api/
 
 To calculate individual exchange price and the final price, 
 
-def get_BTCUSD(btcusd):
-	btcusd = {
+btcusd = {
 	    "poloniexBTCUSD_mid": (poloniexBTCUSD_ask + poloniexBTCUSD_bid) / 2,
 	    "geminiBTCUSD_mid": (geminiBTCUSD_ask + geminiBTCUSD_bid) / 2,
 	    "okcoinBTCUSD_mid": (okcoinBTCUSD_ask + okcoinBTCUSD_bid) / 2,
@@ -28,7 +27,9 @@ def get_BTCUSD(btcusd):
 	    "krakenBTCUSD_mid": (krakenBTCUSD_ask + krakenBTCUSD_bid) / 2,
 	    "bitstampBTCUSD_mid": (bitstampBTCUSD_ask + bitstampBTCUSD_bid) / 2
 	}
-	
+
+def get_BTCUSD(btcusd):
+
 	usdpw_usdtotal = 0
 	
 	for price in btcusd.values():
