@@ -61,8 +61,9 @@ The price of 1 XMR is 0.01795 BTC or $10.77 USD.
 
 
 
-Poloniex API:
-
+Poloniex API: https://poloniex.com/public?command=returnTicker
+Usage: dict['pair']['label']) # pair is the currency pair that you're requesting, label is information.
+Example: dict['USDT_BTC']['last] # This would return the last trade for the pairing USDT_BTC
 
 
 
