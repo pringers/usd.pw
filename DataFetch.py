@@ -8,7 +8,7 @@ def loadForFile(filename):
     return dat
 
 if __name__ == "__main__":
-    items = loadForFile("./endpoints/BTC.json")
+    items = loadForFile("./endpoints/BTC-USD.json")
     for i in items:
         j = requests.get(i).json()
         found = False
