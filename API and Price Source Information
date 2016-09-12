@@ -21,7 +21,7 @@ If they don't, we'll only use a handful of those exchanges to calculate the pric
 If there are coins without a $COIN/USD trade, then the price of the coin will have to be determined by this calculation.
 
 exchangeCOINBTC_mid = (exchangeCOINBTC_ask + exchangeCOINBTC_bid) / 2
-exchangeCOINUSD = exchangeCOINBTC_mid = * usdpw_BTCUSD 
+exchangeCOINUSD = exchangeCOINBTC_mid * usdpw_BTCUSD 
 
 * usdpw_BTCUSD will be the main/average pricepoint calculated from all the exchanges. (See below)
 
