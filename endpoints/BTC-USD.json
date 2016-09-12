@@ -1,2 +1,2 @@
 
-["https://poloniex.com/public?command=returnTicker", "https://api.gemini.com/v1/pubticker/btcusd", "https://www.okcoin.com/api/v1/ticker.do?symbol=btc_usd", "https://api.bitfinex.com/v1/pubticker/btcusd", "https://btc-e.com/api/3/ticker/btc_usd", "https://www.bitstamp.net/api/v2/ticker/btcusd/"]
+["https://poloniex.com/public?command=returnTicker", "https://api.gemini.com/v1/pubticker/btcusd", "https://www.okcoin.com/api/v1/ticker.do?symbol=btc_usd", "https://api.bitfinex.com/v1/pubticker/btcusd", "https://btc-e.com/api/3/ticker/btc_usd", "https://www.bitstamp.net/api/v2/ticker/btcusd/","https://api.gdax.com/products/btc-usd/ticker"]

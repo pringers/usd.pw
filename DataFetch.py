@@ -12,7 +12,7 @@ if __name__ == "__main__":
     for i in items:
         j = requests.get(i).json()
         found = False
-        for l in ['last', 'last_price',]:
+        for l in ['last', 'last_price', 'price']:
             if l in j:
                 found = True
                 print(j[l])
