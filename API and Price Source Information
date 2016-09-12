@@ -61,14 +61,29 @@ The price of 1 XMR is 0.01795 BTC or $10.77 USD.
 
 
 
-Poloniex API: https://poloniex.com/public?command=returnTicker
+Poloniex API: https://poloniex.com/public?command=returnTicker # This returns all tickers and currency pair information
 Usage: dict['pair']['label']) # pair is the currency pair that you're requesting, label is information.
 Example: dict['USDT_BTC']['last] # This would return the last trade for the pairing USDT_BTC
 
+Gemini API: https://api.gemini.com/v1/pubticker/symbol # "symbol" is a currency pair listed on https://api.gemini.com/v1/symbols
+Usage: dict['label']) # information you're requesting
+Example: dict['last'] # This will return the last traded price for the symbol you're requesting.
 
+OKCoin API: https://www.okcoin.com/api/v1/ticker.do?symbol=symbol # "symbol" is the currency pair that OKCoin supports.
+Usage: dict['label'] # information you're requsting
+Example: dict['ticker']['last']) # This will return the last traded price for the symbol you're requesting.
 
+Bitfinex API: https://api.bitfinex.com/v1/pubticker/symbol # "symbol" is the currency pair that Bitfinex supports.
+Usage: dict['label']) # information you're requesting
+Example: dict['last_price'] # This will return the last traded price for the symbol you're requesting.
 
+BTC-e API: https://btc-e.com/api/3/ticker/symbol # "symbol" is the currency pair that BTC-e supports.
+Usage: dict['pair']['label']) # information you're requesting
+Example: dict['btc_usd']['last_price'] # This will return the last traded price for the symbol you're requesting.
 
+Bitstamp API: https://www.bitstamp.net/api/v2/ticker/symbol # "symbol" is the currency pair that Bitstmap supports.
+Usage: dict['pair']['label']) # information you're requesting
+Example: dict['last'] # This will return the last traded price for the symbol you're requesting.
 
 
 
