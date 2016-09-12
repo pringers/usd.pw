@@ -1,6 +1,10 @@
 # USD.PW
 
-This is the code that is used for usd.pw. 
+The code that is used to run usd.pw
+
+# Currently in Development, nothing actually works.
 
 
-Co-Written by @JPeroutek, @Pringers, and @eduardog3000.
+Written by @JPeroutek, @Pringers, and @eduardog3000
+
+
