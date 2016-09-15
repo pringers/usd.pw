@@ -18,4 +18,11 @@
 	"address": "https://api.gdax.com/products/ltc-btc/ticker",
 	"location": ["price"],
 	"power": -1
+},{
+	"name": "Bittrex",
+	"address": "https://bittrex.com/api/v1.1/public/getmarketsummary?market=btc-ltc",
+	"location": ["result"][0]["Last"],
+	"power": -1
 }]
+
+
