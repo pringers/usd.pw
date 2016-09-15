@@ -1,0 +1,26 @@
+[{
+	"name": "Poloniex",
+	"address": "https://poloniex.com/public?command=returnTicker",
+	"location": ["BTC_LTC", "last"],
+	"power": -1
+}, {
+	"name": "BTC-e",
+	"address": "https://btc-e.com/api/3/ticker/ltc_btc",
+	"location": ["ltc_btc", "last"],
+	"power": -1
+}, {
+	"name": "OKCoin",
+	"address": "https://www.okcoin.com/api/v1/ticker.do?symbol=btc_usd",
+	"location": ["ticker", "last"],
+	"power": -1
+}, {
+	"name": "BitFinEx",
+	"address": "https://api.bitfinex.com/v1/pubticker/ltcbtc",
+	"location": ["last_price"],
+	"power": -1
+}, {
+	"name": "GDax",
+	"address": "https://api.gdax.com/products/ltc-btc/ticker",
+	"location": ["price"],
+	"power": -1
+}]
