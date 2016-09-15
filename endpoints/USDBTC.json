@@ -21,7 +21,7 @@
 }, {
 	"name": "BTC-E",
 	"address": "https://btc-e.com/api/3/ticker/btc_usd",
-	"location": ["last"],
+	"location": ["btc_usd", "last"],
 	"power": -1
 }, {
 	"name": "BitStamp",
