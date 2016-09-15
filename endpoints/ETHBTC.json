@@ -23,4 +23,9 @@
 	"address": "https://api.gdax.com/products/eth-btc/ticker",
 	"location": ["price"],
 	"power": -1
+},{
+	"name": "Bittrex",
+	"address": "https://bittrex.com/api/v1.1/public/getmarketsummary?market=btc-eth",
+	"location": ["result"][0]["Last"],
+	"power": -1
 }]
