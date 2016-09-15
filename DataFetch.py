@@ -30,8 +30,8 @@ def pullPriceDataForSymbol(sym):
             print("Fetching for " + endpoint["name"])
         j = requests.get(endpoint["address"]).json()
         pr = j
-        for i in range(len(endpoint["location"])):
-            pr = pr[endpoint["location"][i]]
+        for i in endpoint["location"]:
+            pr = pr[i]
         pr = float(pr) ** endpoint["power"]
         ret.append(pr)
     return ret
