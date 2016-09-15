@@ -9,11 +9,6 @@
 	"location": ["ltc_btc", "last"],
 	"power": -1
 }, {
-	"name": "OKCoin",
-	"address": "https://www.okcoin.com/api/v1/ticker.do?symbol=btc_usd",
-	"location": ["ticker", "last"],
-	"power": -1
-}, {
 	"name": "BitFinEx",
 	"address": "https://api.bitfinex.com/v1/pubticker/ltcbtc",
 	"location": ["last_price"],
