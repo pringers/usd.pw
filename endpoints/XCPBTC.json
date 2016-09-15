@@ -1,0 +1,11 @@
+[{
+	"name": "Poloniex",
+	"address": "https://poloniex.com/public?command=returnTicker",
+	"location": ["BTC_XCP, "last"],
+	"power": -1
+}, {
+	"name": "Bittrex",
+	"address": "https://bittrex.com/api/v1.1/public/getmarketsummary?market=btc-xcp",
+	"location": ["result"][0]["Last"],
+	"power": -1
+}]
