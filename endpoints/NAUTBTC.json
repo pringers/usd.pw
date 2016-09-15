@@ -1,0 +1,11 @@
+[{
+	"name": "Poloniex",
+	"address": "https://poloniex.com/public?command=returnTicker",
+	"location": ["BTC_NAUT", "last"],
+	"power": -1
+}, {
+	"name": "Bittrex",
+	"address": "https://bittrex.com/api/v1.1/public/getmarketsummary?market=btc-naut",
+	"location": ["result"][0]["Last"],
+	"power": -1
+}]
