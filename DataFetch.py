@@ -8,17 +8,21 @@ def loadForFile(filename):
     f.close()
     return dat
 
-def pullPriceDataForSymbol(sym):
+def pullPriceDataForSymbol(sym, sym2='BTC'):
     '''
-    sym = Symbol for Conversion.  Because all currencies are converted in 
+    sym  = Symbol for Conversion.  Because all currencies are converted in 
               relation to Bitcoin, we are just going to pull XXXBTC.json,
               where `xxx` is the symbol parameter.
+    sym2 = Secondary Symbol.  Should not be used except in edge cases.
     '''
 
-    if not sym in config.SUPPORTED_SYMBOLS:
+    if not (sym in config.SUPPORTED_SYMBOLS and sym2 in config.TARGET_SYMBOLS):
         return None
 
-    filename = "./endpoints/" + sym + "BTC.json"
+    if sym  == sym2:
+        return [1]
+    
+    filename = "./endpoints/" + sym + sym2 + ".json"
     ret = []
     try:
         dat = loadForFile(filename)
