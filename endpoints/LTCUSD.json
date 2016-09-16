@@ -1,0 +1,21 @@
+[{
+	"name": "Poloniex",
+	"address": "https://poloniex.com/public?command=returnTicker",
+	"location": ["USDT_LTC", "last"],
+	"power": -1
+}, {
+	"name": "BitFinEx",
+	"address": "https://api.bitfinex.com/v1/pubticker/ltcusd",
+	"location": ["last_price"],
+	"power": -1
+}, {
+	"name": "BTC-E",
+	"address": "https://btc-e.com/api/3/ticker/ltc_usd",
+	"location": ["ltc_usd", "last"],
+	"power": -1
+}, {
+	"name": "GDax",
+	"address": "https://api.gdax.com/products/ltc-usd/ticker",
+	"location": ["price"],
+	"power": -1
+}]
