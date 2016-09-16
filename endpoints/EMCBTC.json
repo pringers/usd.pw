@@ -6,6 +6,6 @@
 }, {
 	"name": "Bittrex",
 	"address": "https://bittrex.com/api/v1.1/public/getmarketsummary?market=btc-emc",
-	"location": ["result"][0]["Last"],
+	"location": ["result", "Last"],
 	"power": 1
 }]
