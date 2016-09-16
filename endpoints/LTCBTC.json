@@ -2,27 +2,27 @@
 	"name": "Poloniex",
 	"address": "https://poloniex.com/public?command=returnTicker",
 	"location": ["BTC_LTC", "last"],
-	"power": -1
+	"power": 1
 }, {
 	"name": "BTC-e",
 	"address": "https://btc-e.com/api/3/ticker/ltc_btc",
 	"location": ["ltc_btc", "last"],
-	"power": -1
+	"power": 1
 }, {
 	"name": "BitFinEx",
 	"address": "https://api.bitfinex.com/v1/pubticker/ltcbtc",
 	"location": ["last_price"],
-	"power": -1
+	"power": 1
 }, {
 	"name": "GDax",
 	"address": "https://api.gdax.com/products/ltc-btc/ticker",
 	"location": ["price"],
-	"power": -1
+	"power": 1
 },{
 	"name": "Bittrex",
 	"address": "https://bittrex.com/api/v1.1/public/getmarketsummary?market=btc-ltc",
 	"location": ["result"][0]["Last"],
-	"power": -1
+	"power": 1
 }]
 
 
