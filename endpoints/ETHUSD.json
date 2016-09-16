@@ -1,0 +1,31 @@
+[{
+	"name": "Poloniex",
+	"address": "https://poloniex.com/public?command=returnTicker",
+	"location": ["USDT_ETH", "last"],
+	"power": -1
+}, {
+	"name": "Gemini",
+	"address": "https://api.gemini.com/v1/pubticker/ethusd",
+	"location": ["last"],
+	"power": -1
+}, {
+	"name": "OKCoin",
+	"address": "https://www.okcoin.com/api/v1/ticker.do?symbol=eth_usd",
+	"location": ["ticker", "last"],
+	"power": -1
+}, {
+	"name": "BitFinEx",
+	"address": "https://api.bitfinex.com/v1/pubticker/ethusd",
+	"location": ["last_price"],
+	"power": -1
+}, {
+	"name": "BTC-E",
+	"address": "https://btc-e.com/api/3/ticker/eth_usd",
+	"location": ["eth_usd", "last"],
+	"power": -1
+}, {
+	"name": "GDax",
+	"address": "https://api.gdax.com/products/eth-usd/ticker",
+	"location": ["price"],
+	"power": -1
+}]
